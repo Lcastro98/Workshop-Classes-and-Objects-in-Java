@@ -29,38 +29,6 @@ public class Product {
     }
 
     /**
-     * Método accesor del atributo name (nombre del producto).
-     * @return 
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * Método modificador del atributo name (nombre del producto).
-     * @param name 
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    /**
-     * Método accesor del atributo description (descripción del producto).
-     * @return 
-     */
-    public String getDescription() {
-        return description;
-    }
-
-    /**
-     * Método modificador del atributo description (descripción del producto).
-     * @param description 
-     */
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    /**
      * Método accesor del atributo price (precio del producto).
      * @return 
      */

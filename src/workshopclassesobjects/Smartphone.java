@@ -9,7 +9,7 @@ package workshopclassesobjects;
  * @author Lorena Castro
  */
 public class Smartphone {
-    protected String brand;
+    private String brand;
     protected String model;
     public String operatingSystem;
     protected String processor;
