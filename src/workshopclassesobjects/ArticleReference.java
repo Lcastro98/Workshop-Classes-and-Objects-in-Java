@@ -6,8 +6,67 @@ package workshopclassesobjects;
 
 /**
  *
- * @author lcast
+ * @author Lorena Castro
  */
 public class ArticleReference {
+    public String autors;
+    public int yearArticle;
+    public String title;
+    public String journal;
+    protected int volumeJournal;
+    protected int numberJournal;
+    protected int pages;
+    private String DOI;
+
+    /**
+     * Constructor: crea una instancia de la clase ArticleReference.
+     * @param autors 
+     * @param yearArticle
+     * @param title
+     * @param journal
+     * @param volumeJournal
+     * @param numberJournal
+     * @param pages
+     * @param DOI 
+     */
+    public ArticleReference(String autors, int yearArticle, String title, String journal, int volumeJournal, int numberJournal, int pages, String DOI) {
+        this.autors = autors;
+        this.yearArticle = yearArticle;
+        this.title = title;
+        this.journal = journal;
+        this.volumeJournal = volumeJournal;
+        this.numberJournal = numberJournal;
+        this.pages = pages;
+        this.DOI = DOI;
+    }
+
+    /**
+     * 
+     * @return 
+     */
+    public String getDOI() {
+        return DOI;
+    }
+
     
+    /**
+     * 
+     * @param DOI 
+     */
+    public void setDOI(String DOI) {
+        this.DOI = DOI;
+    }
+
+    /**
+     * Ordena los datos para estructurar la referencia del artículo científico
+     * @return 
+     */
+    @Override
+    public String toString() {
+        return "La referencia del artículo científico es: " + autors + ".(" + yearArticle + "). " + title + ". " + journal + ". " + volumeJournal + "(" + numberJournal + "), " + pages + ". DOI: " + DOI;
+    }
+
+    
+
+
 }
