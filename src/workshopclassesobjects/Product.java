@@ -5,7 +5,7 @@
 package workshopclassesobjects;
 
 /**
- *
+ * La clase Product incluye los datos necesarios para identificar un producto listo para la venta.
  * @author Lorena Castro
  */
 public class Product {

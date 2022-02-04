@@ -6,7 +6,7 @@ package workshopclassesobjects;
 
 import java.util.ArrayList;
 /**
- *
+ * La clase Fruit permite describir las caracteristicas de la fruta que se cree en cuanto su nombre, peso promedio y posibles colores.
  * @author Lorena Castro
  */
 public class Fruit {

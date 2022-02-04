@@ -5,7 +5,7 @@
 package workshopclassesobjects;
 
 /**
- *
+ * La clase BankAccount permite determinar si una cuenta se encuentra activa o no.
  * @author Lorena Castro
  */
 public class BankAccount {
@@ -44,7 +44,7 @@ public class BankAccount {
      */
     @Override
     public String toString() {
-        return "Cuenta Bancaria: " + "Número de Cuenta: " + accountNumber + "; Está activa: " + activated + '.';
+        return "Cuenta Bancaria: " + "Número de Cuenta: " + accountNumber + "; Estado: " + (activated==true?"Activa":"Inactiva") + '.';
     }
     
 }

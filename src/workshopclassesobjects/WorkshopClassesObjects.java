@@ -4,8 +4,6 @@
  */
 package workshopclassesobjects;
 
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -28,7 +26,7 @@ public class WorkshopClassesObjects {
         Fruit f = new Fruit("Pera", 250, colors);
         
         BankAccount bA = new BankAccount(123456789, true);
-        
+
         ArticleReference ar = new ArticleReference("Ibarra, R., Castillo, J., Trujillo, P., García, C., Yanac, R. y Pando, B", 2021, "Enseñanza-aprendizaje de programación de computadoras: avances en la última década", "Revista Científica", 42, 3, 290, "10.14483/23448350.18339");
         
         Product pr = new Product(7702120131321L, "Suave gold", "Contiene 50 pañuelos triple hoja, tiene un peso deto de 66g y el tamaño de cada pañuelo es de 14cm x 21cm", 4000);

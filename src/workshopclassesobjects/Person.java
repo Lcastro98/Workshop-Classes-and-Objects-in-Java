@@ -6,7 +6,7 @@ package workshopclassesobjects;
 
 import java.util.Date;
 /**
- * 
+ * La clase Person toma datos que permiten identificar a una persona.
  * @author Lorena Castro
  */
 public class Person {

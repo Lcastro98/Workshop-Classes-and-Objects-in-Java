@@ -5,15 +5,15 @@
 package workshopclassesobjects;
 
 /**
- *
+ * La clase Smartphone permite obtener datos relevantes de un celular.
  * @author Lorena Castro
  */
 public class Smartphone {
     protected String brand;
     protected String model;
     public String operatingSystem;
-    public String processor;
-    public String RAM;
+    protected String processor;
+    protected String RAM;
     public String storage;
     
     /**
