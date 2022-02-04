@@ -9,45 +9,55 @@ package workshopclassesobjects;
  * @author Lorena Castro
  */
 public class Smartphone {
-    protected String marca;
-    protected String modelo;
-    public String sistemaOperativo;
-    public String procesador;
+    protected String brand;
+    protected String model;
+    public String operatingSystem;
+    public String processor;
     public String RAM;
-    public String memoria;
-
+    public String storage;
+    
     /**
      * Constructor: crea una instancia de la clase Smartphone.
-     * @param marca
-     * @param modelo
-     * @param sistemaOperativo
-     * @param procesador
+     * @param brand
+     * @param model
+     * @param operatingSystem
+     * @param processor
      * @param RAM
-     * @param memoria 
+     * @param storage 
      */
-    public Smartphone(String marca, String modelo, String sistemaOperativo, String procesador, String RAM, String memoria) {
-        this.marca = marca;
-        this.modelo = modelo;
-        this.sistemaOperativo = sistemaOperativo;
-        this.procesador = procesador;
+    public Smartphone(String brand, String model, String operatingSystem, String processor, String RAM, String storage) {
+        this.brand = brand;
+        this.model = model;
+        this.operatingSystem = operatingSystem;
+        this.processor = processor;
         this.RAM = RAM;
-        this.memoria = memoria;
+        this.storage = storage;
     }
 
     /**
-     * Método accesor del atributo Marca.
+     * Método accesor del atributo brand (marca del celular).
      * @return 
      */
-    public String getMarca() {
-        return marca;
+    public String getBrand() {
+        return brand;
     }
 
     /**
-     * Método modificador del atributo Marca.
-     * @param marca 
+     * Método modificador del atributo brand (marca del celular).
+     * @param brand 
      */
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
+
+    /**
+     * Se sobreescribe el método toString para presentar las características del celular de la manera deseada.
+     * @return 
+     */
+    @Override
+    public String toString() {
+        return "Características del Celular: " + "Marca: " + brand + "; Modelo: " + model + "; Sistema Operativo: " + operatingSystem + "; procesador: " + processor + "; RAM: " + RAM + "; Almacenamiento:" + storage + '.';
+    }
+    
     
 }

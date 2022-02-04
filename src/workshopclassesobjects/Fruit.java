@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package workshopclassesobjects;
+
 import java.util.ArrayList;
 /**
  *
@@ -14,7 +15,7 @@ public class Fruit {
     public ArrayList<String> colors;
 
     /**
-     * Constructor: Crea una instancia del objeto Fruit
+     * Constructor: Crea una instancia del objeto Fruit (fruta).
      * @param name
      * @param averageWeight
      * @param colors 
@@ -27,7 +28,7 @@ public class Fruit {
     }
     
     /**
-     * 
+     * Método accesor del atributo colors (colores de la fruta).
      * @return 
      */
     public ArrayList<String> getColors() {
@@ -35,11 +36,21 @@ public class Fruit {
     }
 
     /**
-     * 
+     * Método modificador del atributo colors (colores de la fruta).
      * @param colors 
      */
     public void setColors(ArrayList<String> colors) {
         this.colors = colors;
     }
+
+    /**
+     * Se sobreescribe el método toString para presentar los datos de la fruta de la manera deseada.
+     * @return 
+     */
+    @Override
+    public String toString() {
+        return "La fruta " + name + " tiene un peso promedio de " + averageWeight + "gr y puede tener los siguientes colores " + colors + ".";
+    }
+    
     
 }

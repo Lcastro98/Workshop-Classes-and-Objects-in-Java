@@ -9,19 +9,19 @@ package workshopclassesobjects;
  * @author Lorena Castro
  */
 public class Product {
-    protected int UPC;
+    protected long UPC;
     public String name;
     public String description;
     private long price;
 
     /**
      * Constructor: crea una instancia de la clase Product.
-     * @param UPC
+     * @param UPC código de barras de un producto.
      * @param name
      * @param description
      * @param price 
      */
-    public Product(int UPC, String name, String description, long price) {
+    public Product(long UPC, String name, String description, long price) {
         this.UPC = UPC;
         this.name = name;
         this.description = description;
@@ -29,7 +29,7 @@ public class Product {
     }
 
     /**
-     * 
+     * Método accesor del atributo name (nombre del producto).
      * @return 
      */
     public String getName() {
@@ -37,7 +37,7 @@ public class Product {
     }
 
     /**
-     * 
+     * Método modificador del atributo name (nombre del producto).
      * @param name 
      */
     public void setName(String name) {
@@ -45,7 +45,7 @@ public class Product {
     }
 
     /**
-     * 
+     * Método accesor del atributo description (descripción del producto).
      * @return 
      */
     public String getDescription() {
@@ -53,7 +53,7 @@ public class Product {
     }
 
     /**
-     * 
+     * Método modificador del atributo description (descripción del producto).
      * @param description 
      */
     public void setDescription(String description) {
@@ -61,7 +61,7 @@ public class Product {
     }
 
     /**
-     * 
+     * Método accesor del atributo price (precio del producto).
      * @return 
      */
     public long getPrice() {
@@ -69,12 +69,20 @@ public class Product {
     }
 
     /**
-     * 
+     * Método modificador del atributo price (precio del producto).
      * @param price 
      */
     public void setPrice(long price) {
         this.price = price;
     }
-    
+
+    /**
+     * Se sobreescribe el método toString para presentar los datos de la manera deseada.
+     * @return 
+     */
+    @Override
+    public String toString() {
+        return "Datos del Producto: " + "UPC: " + UPC + "; Nombre: " + name + "; Descripción: " + description + "; Precio: " + price + '.';
+    }
     
 }

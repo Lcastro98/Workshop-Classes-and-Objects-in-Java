@@ -23,7 +23,7 @@ public class BankAccount {
     }
 
     /**
-     * 
+     * Método accesor del atributo activated (activada).
      * @return 
      */
     public boolean isActivated() {
@@ -31,11 +31,20 @@ public class BankAccount {
     }
 
     /**
-     * 
+     * Método modificador del atributo activated (activada).
      * @param activated 
      */
     public void setActivated(boolean activated) {
         this.activated = activated;
+    }
+
+    /**
+     * Se sobreescribe el método toString para presentar los datos de la manera deseada.
+     * @return 
+     */
+    @Override
+    public String toString() {
+        return "Cuenta Bancaria: " + "Número de Cuenta: " + accountNumber + "; Está activa: " + activated + '.';
     }
     
 }

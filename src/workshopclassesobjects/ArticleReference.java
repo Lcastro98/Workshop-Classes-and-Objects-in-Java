@@ -27,7 +27,7 @@ public class ArticleReference {
      * @param volumeJournal
      * @param numberJournal
      * @param pages
-     * @param DOI 
+     * @param DOI Identificador de objeto digital.
      */
     public ArticleReference(String autors, int yearArticle, String title, String journal, int volumeJournal, int numberJournal, int pages, String DOI) {
         this.autors = autors;
@@ -41,7 +41,7 @@ public class ArticleReference {
     }
 
     /**
-     * 
+     * Método accesor del atributo DOI (Identificador del artículo en su versión digital).
      * @return 
      */
     public String getDOI() {
@@ -50,7 +50,7 @@ public class ArticleReference {
 
     
     /**
-     * 
+     * Método modificador del atributo DOI (Identificador del artículo en su versión digital).
      * @param DOI 
      */
     public void setDOI(String DOI) {
@@ -58,15 +58,12 @@ public class ArticleReference {
     }
 
     /**
-     * Ordena los datos para estructurar la referencia del artículo científico
+     * Se sobreescribe el método toString para estructurar la referencia del artículo científico.
      * @return 
      */
     @Override
     public String toString() {
         return "La referencia del artículo científico es: " + autors + ".(" + yearArticle + "). " + title + ". " + journal + ". " + volumeJournal + "(" + numberJournal + "), " + pages + ". DOI: " + DOI;
     }
-
-    
-
 
 }

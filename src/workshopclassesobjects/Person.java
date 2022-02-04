@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package workshopclassesobjects;
+
 import java.util.Date;
 /**
  * 
@@ -17,7 +18,7 @@ public class Person {
     public float weight;
 
     /**
-     * Constructor crea una instancia de la clase Person
+     * Constructor: crea una instancia de la clase Person (persona).
      * @param name
      * @param lastName1 
      * @param lastName2
@@ -36,7 +37,7 @@ public class Person {
     }
     
     /**
-     * 
+     * Método accesor del atributo name (nombre de la persona).
      * @return 
      */
     public String getName() {
@@ -44,11 +45,20 @@ public class Person {
     }
 
     /**
-     * 
+     * Método modificador del atributo name (nombre de la persona).
      * @param name 
      */
     public void setName(String name) {
         this.name = name;
+    }
+
+    /**
+     * Se sobreescribe el método toString para presentar los datos de la persona de la manera deseada.
+     * @return 
+     */
+    @Override
+    public String toString() {
+        return "Datos de la Persona: " + "Nombre: " + name + "; Primer Apellido: " + lastName1 + "; Segundo Apellido: " + lastName2 + "; Fecha de Nacimiento: " + dateBirth + "; Altura: " + height + "; Peso: " + weight + '.';
     }
     
 }
